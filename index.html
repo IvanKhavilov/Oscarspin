@@ -10,6 +10,10 @@
     <link rel="shortcut icon" type="image/svg" href="images/favicon.svg" />
     <title>Oscarspin Official Site ᐉ Oscarspin Casino Login</title>
     <style type="text/css">
+      :root {
+        --btn-bg: linear-gradient(180deg, #39bf4d 0%, #005239 100%); /*Фон кнопок*/
+        --accent-color: #30b044; /*Акцентный цвет*/
+      }
       *,
       ::after,
       ::before {
@@ -225,7 +229,7 @@
         padding: 8px;
         border-radius: 8px;
         background-color: #101114;
-        box-shadow: inset 0 0 0 2px #02c077;
+        box-shadow: inset 0 0 0 2px var(--accent-color);
       }
       .language__list {
         display: none;
@@ -248,7 +252,7 @@
         padding: 8px;
         border-radius: 8px;
         background-color: #101114;
-        box-shadow: inset 0 0 0 2px #03f295;
+        box-shadow: inset 0 0 0 2px var(--accent-color);
         text-align: center;
       }
       .language__list-item:not(:last-child) {
@@ -293,7 +297,7 @@
         box-shadow: none;
       }
       .registration {
-        background: linear-gradient(180deg, #39bf4d 0%, #005239 100%);
+        background: var(--btn-bg);
       }
       .main {
         padding: 161px 0 102px;
@@ -321,7 +325,7 @@
       .main__btn {
         padding: 14px 74px;
         transition: all 0.5s;
-        background: linear-gradient(180deg, #39bf4d 0%, #005239 100%);
+        background: var(--btn-bg);
         color: #fff;
         font-size: 18px;
         border-radius: 1000px;
@@ -361,7 +365,7 @@
         color: #fff;
       }
       .more-games {
-        background: linear-gradient(180deg, #39bf4d 0%, #005239 100%);
+        background: var(--btn-bg);
         font-size: 14px;
         font-weight: 600;
         line-height: 16px;
@@ -377,8 +381,8 @@
         margin: 30px 0;
         border-radius: 25px;
         max-width: 70%;
-        box-shadow: 0 0 8px 3px #02c077;
-        -webkit-box-shadow: 0 0 8px 3px #02c077;
+        box-shadow: 0 0 8px 3px var(--accent-color);
+        -webkit-box-shadow: 0 0 8px 3px var(--accent-color);
         padding: 20px 0;
         position: relative;
       }
@@ -445,7 +449,7 @@
       .questions__item {
         position: relative;
         border-radius: 5px;
-        border-left: 3px solid #02c077;
+        border-left: 3px solid var(--accent-color);
       }
       .questions__item + .questions__item {
         margin-top: 15px;
@@ -577,7 +581,7 @@
           background-color: #2a2d35;
         }
         .registration--mobile {
-          background-color: #03f295;
+          background: var(--btn-bg);
         }
         .main {
           padding: 200px 8px 30px;
@@ -614,8 +618,12 @@
         }
       }
       @media (max-width: 370px) {
-        .header__btn-box {
-          display: none;
+        .header__btn-box .btn__link {
+          font-size: 10px;
+          padding: 6px;
+        }
+        .log-in {
+          margin-right: 0;
         }
       }
     </style>
